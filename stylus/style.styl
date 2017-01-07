@@ -1,0 +1,27 @@
+@import 'nib'
+@import "components/base"
+@import "components/settings"
+@import "components/core"
+@import "components/flexbox"
+    
+.container
+    container()
+
+.item
+    background-color $red
+    border 1px solid white
+
+.item-50
+    width 50%
+
+.item-70
+    size 5em 10em
+    
+.item-30
+    width 30%
+  
+    .item-50,
+    .item-70,
+    .item-30
+        +below(movil)
+            width 100%
